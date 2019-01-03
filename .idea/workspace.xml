@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="550a46c6-fe05-4732-b2e4-6e27c5b77ff2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FeatureReduce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FeatureReduce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Regression/PolyLinearRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/PolyLinearRegression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Regression/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/Util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,30 +43,31 @@
     <session id="-71492205">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="12" />
-          <entry key="py" value="97" />
+          <entry key="py" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="96" />
+          <entry key="Python" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -74,8 +75,8 @@
           <entry key="LDA" value="111" />
           <entry key="MultipleLinearRegression" value="988" />
           <entry key="PCA" value="88" />
-          <entry key="PolyLinearRegression" value="157" />
-          <entry key="Python Console" value="51" />
+          <entry key="PolyLinearRegression" value="420" />
+          <entry key="Python Console" value="87" />
           <entry key="demo" value="36" />
           <entry key="demo2" value="31" />
           <entry key="dummy" value="2" />
@@ -84,14 +85,14 @@
           <entry key="pca_cuoi_ky2" value="1" />
           <entry key="pca_manual" value="18" />
           <entry key="pca_scikitlearn" value="22" />
-          <entry key="py" value="9057" />
-          <entry key="txt" value="33" />
+          <entry key="py" value="11752" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Python" value="10616" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Python" value="13610" />
         </counts>
       </usages-collector>
     </session>
@@ -102,13 +103,13 @@
         <entry file="file://$PROJECT_DIR$/Regression/PolyLinearRegression.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="106">
-                <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <first_editor relative-caret-position="128">
+                <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
                 <folding>
-                  <element signature="e#0#37#0" expanded="true" />
+                  <element signature="e#0#49#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-119" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -145,11 +146,16 @@
       <find>1000000000.0</find>
       <find>randomOutput</find>
       <find>text</find>
+      <find>sort</find>
+      <find>X_train_best</find>
+      <find>\w+best</find>
+      <find>dataset.columns[best_feature_index]</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
       <replace>+</replace>
       <replace>Navie Bayes</replace>
+      <replace>best_column_name</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -173,8 +179,8 @@
         <option value="$PROJECT_DIR$/DimensionalityReduction/LDA.py" />
         <option value="$PROJECT_DIR$/Regression/Utils.py" />
         <option value="$PROJECT_DIR$/Regression/dataset_for_multi_linear_regression_2.csv" />
-        <option value="$PROJECT_DIR$/Regression/Util.py" />
         <option value="$PROJECT_DIR$/DimensionalityReduction/PCA.py" />
+        <option value="$PROJECT_DIR$/Regression/Util.py" />
         <option value="$PROJECT_DIR$/Regression/MultipleLinearRegression.py" />
         <option value="$PROJECT_DIR$/Regression/PolyLinearRegression.py" />
       </list>
@@ -186,7 +192,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="8" />
     <option name="width" value="1346" />
@@ -230,7 +236,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -285,9 +291,6 @@
       <module name="FeatureReduce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Regression" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -303,22 +306,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PCA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FeatureReduce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DimensionalityReduction" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\HK1-4\ML\FeatureReduce\DimensionalityReduction\PCA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DimensionalityReduction/PCA.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -366,20 +366,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pca_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FeatureReduce" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pca_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,18 +387,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.LDA" />
-      <item itemvalue="Python.demo2" />
-      <item itemvalue="Python.PDA" />
       <item itemvalue="Python.MultipleLinearRegression" />
       <item itemvalue="Python.PolyLinearRegression" />
+      <item itemvalue="Python.pca_2" />
+      <item itemvalue="Python.PCA" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.PolyLinearRegression" />
         <item itemvalue="Python.MultipleLinearRegression" />
+        <item itemvalue="Python.PCA" />
+        <item itemvalue="Python.pca_2" />
         <item itemvalue="Python.LDA" />
-        <item itemvalue="Python.PDA" />
-        <item itemvalue="Python.demo2" />
       </list>
     </recent_temporary>
   </component>
@@ -428,9 +425,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="8" width="1346" height="698" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27838257" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15128593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -444,14 +442,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.46548674" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.5840708" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.49114332" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.58293074" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="3" sideWeight="0.50318474" side_tool="true" weight="0.7262831" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
-      <window_info active="true" anchor="right" auto_hide="true" x="626" y="84" width="518" height="618" id="SciView" order="5" sideWeight="0.4968153" visible="true" weight="0.7216174" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32970452" />
+      <window_info anchor="right" auto_hide="true" x="626" y="84" width="518" height="618" id="SciView" order="5" sideWeight="0.4968153" weight="0.7118003" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2375189" />
@@ -519,16 +517,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.759/knn.py" />
     <entry file="file://$PROJECT_DIR$/DimensionalityReduction.py" />
     <entry file="file://$PROJECT_DIR$/DimensionalityReduction.PCA.py" />
-    <entry file="file://$PROJECT_DIR$/pca_2.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="972">
-            <caret line="77" column="49" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36/Lib/site-packages/sklearn/metrics/classification.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -729,42 +717,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36/Lib/site-packages/sklearn/model_selection/_split.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-477">
-            <caret line="1967" column="21" lean-forward="true" selection-start-line="1967" selection-start-column="21" selection-end-line="1967" selection-end-column="21" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../linear-regression/lr.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="119">
             <caret line="27" selection-start-line="27" selection-end-line="36" selection-end-column="58" />
-            <folding>
-              <element signature="e#0#19#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/Util.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="208">
-            <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-            <folding>
-              <element signature="e#0#28#0" expanded="true" />
-              <element signature="e#89#317#0" />
-              <element signature="e#377#443#0" />
-              <marker date="1546436228008" expanded="true" signature="668:669" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-64" />
         </state>
       </provider>
     </entry>
@@ -809,19 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/MultipleLinearRegression.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="17">
-            <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="24" />
-            <folding>
-              <element signature="e#0#19#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36/Lib/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -835,8 +781,52 @@
     <entry file="file://$PROJECT_DIR$/DimensionalityReduction/LDA.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="134">
+          <first_editor relative-caret-position="644">
             <caret line="47" column="91" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="91" />
+          </first_editor>
+          <second_editor relative-caret-position="-87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pca_2.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-268">
+            <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/sklearn/preprocessing/data.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="905">
+            <caret line="1365" column="8" selection-start-line="1365" selection-start-column="8" selection-end-line="1365" selection-end-column="8" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression/Util.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="218">
+            <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
+            <folding>
+              <element signature="e#0#28#0" expanded="true" />
+              <marker date="1546532569103" expanded="false" signature="904:905" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression/MultipleLinearRegression.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="119">
+            <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
             <folding>
               <element signature="e#0#19#0" expanded="true" />
             </folding>
@@ -848,11 +838,18 @@
     <entry file="file://$PROJECT_DIR$/DimensionalityReduction/PCA.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="730">
-            <caret line="136" column="43" lean-forward="true" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
-            <folding>
-              <element signature="e#0#19#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="65">
+            <caret line="57" column="81" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="81" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-578">
+            <caret line="1962" column="4" selection-start-line="1962" selection-start-column="4" selection-end-line="1962" selection-end-column="4" />
           </first_editor>
           <second_editor relative-caret-position="-119" />
         </state>
@@ -861,13 +858,13 @@
     <entry file="file://$PROJECT_DIR$/Regression/PolyLinearRegression.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="106">
-            <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <first_editor relative-caret-position="128">
+            <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
             <folding>
-              <element signature="e#0#37#0" expanded="true" />
+              <element signature="e#0#49#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-119" />
+          <second_editor />
         </state>
       </provider>
     </entry>
