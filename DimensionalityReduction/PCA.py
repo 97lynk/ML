@@ -143,7 +143,6 @@ if n_pc == 3:
     ax.set_ylabel('Principal Component 2')
     ax.set_zlabel('Principal Component 3')
 
-    plt.tight_layout()
     plt.show()
 
 print('===============Conclusion==================')
