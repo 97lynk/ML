@@ -89,46 +89,44 @@ x_pos = ['PC %s' % i for i in np.arange(len(var_exp))]
 for index, pc in enumerate(x_pos):
     print('      %s = %.2f%%' %(pc, var_exp[index]))
 
-with plt.style.context('seaborn-whitegrid'):
-    # vẽ chấm cộng dồn qua từng PC
-    plt.plot(cum_var_exp, color='green')
-    # nối các chấm trên
-    plt.scatter(x_pos, cum_var_exp, color='orange', label='cumulative explained variance')
-    # vẽ các bar với giá trị là explained variance
-    bars = plt.bar(x_pos, var_exp, align='center', alpha=0.5, label='individual explained variance')
+plt.figure(figsize=(6, 4))
+# vẽ chấm cộng dồn qua từng PC
+plt.plot(cum_var_exp, color='green')
+# nối các chấm trên
+plt.scatter(x_pos, cum_var_exp, color='orange', label='cumulative explained variance')
+# vẽ các bar với giá trị là explained variance
+bars = plt.bar(x_pos, var_exp, align='center', alpha=0.5, label='individual explained variance')
 
-    # thêm text cho bar
-    for index, bar in enumerate(bars):
-        plt.text(bar.get_x() + .2, bar.get_height() - 5, '{:.2f}%'.format(var_exp[index]) , fontsize=18, color='blue')
+# thêm text cho bar
+for index, bar in enumerate(bars):
+    plt.text(bar.get_x() + .2, bar.get_height() - 5, '{:.2f}%'.format(var_exp[index]) , fontsize=18, color='blue')
 
-    # thêm text cho chấm
-    for i, value in enumerate(cum_var_exp):
-        plt.text(x_pos[i], cum_var_exp[i] + 2, '{:.2f}%'.format(value))
+# thêm text cho chấm
+for i, value in enumerate(cum_var_exp):
+    plt.text(x_pos[i], cum_var_exp[i] + 2, '{:.2f}%'.format(value))
 
-    plt.xticks(x_pos)
-    plt.ylabel('Explained variance ratio')
-    plt.xlabel('Principal components')
-    plt.title('Explained variance by different principal components')
-    plt.legend(loc='best')
-    plt.tight_layout()
-    plt.show()
+plt.xticks(x_pos)
+plt.ylabel('Explained variance ratio')
+plt.xlabel('Principal components')
+plt.title('Explained variance by different principal components')
+plt.legend(loc='best')
+plt.tight_layout()
 
 if n_pc == 2:
-    with plt.style.context('seaborn-whitegrid'):
-        plt.figure(figsize=(6, 4))
-        for lab, col in zip(('YES', 'NO'),
-                            ('green','red')):
-            plt.scatter(X_sklearn[y==lab, 0],
-                        X_sklearn[y==lab, 1],
-                        label=lab,
-                        c=col)
-        plt.xlabel('Principal Component 1')
-        plt.ylabel('Principal Component 2')
-        plt.legend(loc='lower center')
-        plt.tight_layout()
-        plt.show()
+    plt.figure(figsize=(6, 4))
+    for lab, col in zip(('YES', 'NO'),
+                        ('green','red')):
+        plt.scatter(X_sklearn[y==lab, 0],
+                    X_sklearn[y==lab, 1],
+                    label=lab,
+                    c=col)
+    plt.xlabel('Principal Component 1')
+    plt.ylabel('Principal Component 2')
+    plt.legend(loc='lower center')
+    plt.tight_layout()
 
 if n_pc == 3:
+    plt.figure(2)
     colors = {
         'YES': 'green',
         'NO': 'red'
@@ -143,7 +141,7 @@ if n_pc == 3:
     ax.set_ylabel('Principal Component 2')
     ax.set_zlabel('Principal Component 3')
 
-    plt.show()
+plt.show()
 
 print('===============Conclusion==================')
 print('Do PCA giảm chiều dữ liệu từ 39 features xuống còn %s features và chỉ còn %.2f%% '
