@@ -48,7 +48,7 @@ y_pred = regr2.predict(X_test)
 print('================================================')
 print('Linear Regression with random training data and PCA')
 print('PCA explained variance ratio: %s' % pca.explained_variance_ratio_)
-print('Intercept: \n', regr2.coef_)
+print('Intercept: \n', regr2.intercept_)
 print('Coefficients: \n', regr2.coef_)
 print('\ty = %+.2f  %+.2f * X\n' % (regr2.intercept_, regr2.coef_[0]))
 # calculate MAE, MSE, RMSE
