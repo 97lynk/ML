@@ -63,7 +63,7 @@ def find(value, y):
             return y[i -1]
 
 # tính array r^2, array degree cho từng cột data
-#  và tìm dataset (đã split) tốt nhất
+# và tìm dataset (đã split) tốt nhất
 def findBestPolyLinearRegression(dataset, degrees):
     y = dataset.iloc[:, 14].values
 
