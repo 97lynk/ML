@@ -12,17 +12,15 @@ from sklearn.preprocessing import PolynomialFeatures
 
 def convertSize(str):
     if 'M' in str:
-        return float(str.replace('M', '')) * 1000.0  # bỏ M và nhân với 1000.0
+        return float(str.replace('M', '')) * 1024.0  # bỏ M và nhân với 1024.0
     elif 'k' in str:
         # print(str, float(str.replace('k', '')) * 1.0)
-        return float(str.replace('k', '')) * 1.0  # chỉ bỏ
-
+        return float(str.replace('k', '')) * 1.0  # chỉ bỏ k
 
 # xóa đấu + và chuyển sang float
 def removePlus(str):
     str = str.replace(',', '')
-    return float(str.replace('+', ''));
-
+    return float(str.replace('+', ''))
 
 # random install
 # ví dụ
@@ -53,6 +51,16 @@ def randomOutput(y):
             start = 1
             end = 5
         y[j] = randrange(start, end) * 1.0
+
+
+def find(value, y):
+    y = np.unique(y)
+    y.sort()
+    print('find %f' % value)
+    for i in np.arange(1 ,len(y)):
+        if y[i -1] <= value and value < y[i]:
+            print(y[i -1])
+            return y[i -1]
 
 # tính array r^2, array degree cho từng cột data
 #  và tìm dataset (đã split) tốt nhất
