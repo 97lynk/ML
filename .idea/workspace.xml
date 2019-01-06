@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="550a46c6-fe05-4732-b2e4-6e27c5b77ff2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Regression/LogisticRegresssion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PCA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/PCA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Regression/MultipleLinearRegression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Regression/MultipleLinearRegression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL0568.tmp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,8 +106,8 @@
         <entry file="file://$PROJECT_DIR$/Regression/LogisticRegresssion.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="247">
-                <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+              <first_editor relative-caret-position="355">
+                <caret line="111" selection-start-line="111" selection-end-line="111" />
               </first_editor>
               <second_editor relative-caret-position="-119" />
             </state>
@@ -438,8 +434,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" visible="true" weight="0.46537843" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3188406" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.46537843" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3188406" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -916,8 +912,8 @@
     <entry file="file://$PROJECT_DIR$/Regression/LogisticRegresssion.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="247">
-            <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+          <first_editor relative-caret-position="355">
+            <caret line="111" selection-start-line="111" selection-end-line="111" />
           </first_editor>
           <second_editor relative-caret-position="-119" />
         </state>
