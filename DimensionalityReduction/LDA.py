@@ -18,7 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X_std, y, test_size=0.2, random_state=0)
-clf = LogisticRegression(solver='lbfgs',  multi_class='ovr')
+clf = LogisticRegression(solver='lbfgs')
 clf.fit(X_train, y_train)
 y_predict = clf.predict(X_test)
 
@@ -38,14 +38,13 @@ print('===================Report 1============================\n%s' % report_1)
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 lda = LDA(n_components=1, store_covariance=True)
-lda.fit_transform(X_std, y)
+X_new = lda.fit_transform(X_std, y)
 matrix_w = lda.scalings_
-
 print('Eigenvector = LDA 1:\n%s' % matrix_w)
 
 X_train, X_test = X_train.dot(matrix_w), X_test.dot(matrix_w)
 
-clf = LogisticRegression(solver='lbfgs', multi_class='ovr')
+clf = LogisticRegression(solver='lbfgs')
 clf.fit(X_train, y_train)
 y_predict = clf.predict(X_test)
 y_pred_report = lb_enc.inverse_transform(y_predict)

@@ -22,14 +22,12 @@ y_predict = clf.predict(X_test)
 target_names = ['%s' % i for i in lb_enc.classes_]
 actual_names = ['actual %s' % i for i in lb_enc.classes_]
 predict_names = ['predicted %s' % i for i in lb_enc.classes_]
-y_test = lb_enc.inverse_transform(y_test)
-y_predict = lb_enc.inverse_transform(y_predict)
+y_test_report, y_predict_report = lb_enc.inverse_transform(y_test), lb_enc.inverse_transform(y_predict)
 
 from sklearn.metrics import confusion_matrix, classification_report
-
-conf_1 = confusion_matrix(y_test, y_predict, target_names)
+conf_1 = confusion_matrix(y_test_report, y_predict_report, target_names)
 table_conf_1 = pd.DataFrame(conf_1, actual_names, predict_names)
-report_1 = classification_report(y_test, y_predict, target_names)
+report_1 = classification_report(y_test_report, y_predict_report, target_names)
 print('Using Logistic Regression before apply PCA')
 print('===================Confusion Matrix 1==================\n%s' % table_conf_1)
 print('===================Report 1============================\n%s' % report_1)
@@ -103,11 +101,11 @@ X_train, X_test = X_train.dot(matrix_w), X_test.dot(matrix_w)
 clf = LogisticRegression(solver='lbfgs')
 clf.fit(X_train, y_train)
 y_predict = clf.predict(X_test)
-y_predict = lb_enc.inverse_transform(y_predict)
+y_predict_report = lb_enc.inverse_transform(y_predict)
 
-conf_2 = confusion_matrix(y_test, y_predict, target_names)
+conf_2 = confusion_matrix(y_test_report, y_predict_report, target_names)
 table_conf_2 = pd.DataFrame(conf_2, actual_names, predict_names)
-report_2 = classification_report(y_test, y_predict, target_names)
+report_2 = classification_report(y_test_report, y_predict_report, target_names)
 print('Using Logistic Regression after apply PCA with n=3')
 print('===================Confusion Matrix 2==================\n%s' % table_conf_2)
 print('===================Report 2============================\n%s' % report_2)
