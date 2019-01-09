@@ -7,9 +7,13 @@ from sklearn import datasets
 from sklearn.decomposition import PCA
 
 # import some data to play with
-iris = datasets.load_iris()
-X = iris.data[:, :2]  # we only take the first two features.
-y = iris.target
+import pandas as pd
+
+from DimensionalityReduction.PCA import colors
+
+dataset = pd.read_csv('dataset_for_PCA_LDA.csv')
+X = dataset.iloc[:, 0:39].values
+y = dataset.iloc[:, 39].values
 #
 # dataset = pd.read_csv('dataset_for_PCA_LDA.csv')
 # X = dataset.iloc[:, 0:39].values
@@ -17,8 +21,7 @@ y = iris.target
 
 # chuẩn hóa data về 0 -> 1
 from sklearn.preprocessing import StandardScaler
-
-# X = StandardScaler().fit_transform(X)
+X = StandardScaler().fit_transform(X)
 # encode label NO/YES -> 0/1
 from sklearn.preprocessing import LabelEncoder
 
@@ -87,7 +90,7 @@ import numpy as np
 # matrix_w = np.vstack([eig_vecs[:, i] for i in range(n_new)]).T
 # x_new = X_m.dot(matrix_w)
 X_1, X_2 = X, X
-lda1 = LinearDiscriminantAnalysis(n_discriminants=2)
+lda1 = LinearDiscriminantAnalysis(n_discriminants=1)
 lda1.fit(X_1, y)
 X_new_1 = lda1.transform(X_1)
 tot = sum(lda1.e_vals_)
@@ -95,15 +98,15 @@ var_exp = [(i / tot)*100 for i in sorted(lda1.e_vals_, reverse=True)]
 cum_var_exp = np.cumsum(var_exp)
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-lda2 = LDA(n_components=2)
+lda2 = LDA(n_components=1)
 X_new_2 = lda2.fit_transform(X_2, y)
 import matplotlib.pyplot as plt
 
 
-plt.figure(1)
-plt.scatter(X_new_1[:, 0], X_new_1[:, 1], c=y)
-plt.show()
+# plt.figure(1)
+# plt.plot(X_new_1[:, 0].real, np.zeros_like(X_new_1[:, 0]), colors=y)
+# plt.show()
 
-plt.figure(2)
-plt.scatter(X_new_2[:, 0], X_new_2[:, 1], c=y)
-plt.show()
+# plt.figure(2)
+# plt.plot(X_new_2[:, 0], np.zeros_like(X_new_2), c=y)
+# plt.show()
